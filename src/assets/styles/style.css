@@ -7,9 +7,21 @@ html {
     src: url(/src/assets/font/Find\ Cartoon.ttf);
 }
 
+@font-face {
+    font-family: "Amaranth";
+    src: url(/src/assets/font/Amaranth-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(/src/assets/font/Nunito-VariableFont_wght.ttf);
+}
+
 :root {
     /* fonts */ 
     --font-title: "Find Cartoon";
+    --font-data: "Amaranth";
+    --font-text: "Nunito";
 
     /* font-size */
     --title-size: 8rem;
@@ -30,12 +42,16 @@ main {
     width: 100%;
     height: 100vh;
 
+    background-color: var(--bg-color);
+}
+
+/* index.html */
+
+.main-index {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background-color: var(--bg-color);
 }
 
 .title-form {
@@ -107,7 +123,7 @@ input::placeholder {
     }
 }
 
-.ball {
+.btn .ball {
     position: relative;
 
     width: 95%;
@@ -120,4 +136,211 @@ input::placeholder {
 .btn:hover {
     background-color: #594828;
     transition: 1s;
+}
+
+/* result-screen.html - some button settings are further back */
+
+.main-result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.bagde-socialnet, .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 37.5rem;
+}
+
+.socialnet {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.social-icons {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icons a {
+    margin-right: 20px;
+}
+
+.social-icons a:last-child {
+    margin-right: 0px;
+}
+
+.social-icons li {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1.2rem; 
+
+    list-style: none;    
+    
+    border-radius: 50%;
+
+    background-color: white;
+
+    transition: 0.6s ease-in-out;
+}
+
+.social-icons .li-instagram, .social-icons .li-facebook {
+    padding: 1rem;
+}
+
+
+.svg-size {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.svg-instagram {
+    width: 10rem;
+    height: 10rem;
+}
+
+.svg-color {
+    fill: #231F20;
+}
+
+
+.social-icons li:hover {
+    transform: scale(1.2);
+    border: 0.3rem solid red;
+}
+
+
+.results {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.text-fields {
+    width: 40rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 0.8rem;
+
+    background-color: #ffff;
+}
+
+.text-fields p {
+    margin-left: 2rem;
+
+    font-family: var(--font-data);
+    font-size: 1.5rem;
+
+    color: #231F20;
+}
+
+.btn-data {
+    align-self: end;
+}
+
+/* modal */
+
+.modal-history {
+    display: none;
+
+    position: absolute;
+    z-index: 30000;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    
+    width: 120rem;
+    height: 60rem;
+
+    padding:  12rem 9rem;
+
+    background-color: yellowgreen;
+
+    border-radius: 1rem;
+
+    position: relative;
+    animation: show 1s linear;
+}
+
+.btn-close {
+    position: absolute;
+    
+    top: 6%;
+    right: 3%;
+
+    border: none;
+
+    background-color: inherit;
+
+    cursor: pointer;
+}
+
+.close-modal {
+    width: 4rem;
+    height: 4rem;
+}
+
+.title-history {
+    margin-bottom: 4rem;
+
+    font-family: var(--font-data);
+    font-size: 3rem;
+}
+
+.text-history {
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    
+    line-height: 3.4rem;
+
+    z-index: 4;
+}
+
+.badge-opacity {
+    position: absolute;
+
+    bottom: 4%;
+    right: 2%;
+
+    z-index: 3;
+
+    opacity: 0.1;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
 }
