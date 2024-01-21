@@ -38,20 +38,18 @@ html {
     padding: 0;
 }
 
-main {
+body {
     width: 100%;
     height: 100vh;
-
-    background-color: var(--bg-color);
 }
 
 /* index.html */
 
-.main-index {
+.body-index {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .title-form {
@@ -139,25 +137,45 @@ input::placeholder {
 }
 
 /* result-screen.html - some button settings are further back */
+.body-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-result {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
+    width: 100%;
+}
 
 .bagde-socialnet, .data {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    height: 37.5rem;
+    height: 39rem;
+}
+
+.bagde-socialnet {
+    width: 48%;
+}
+
+.bagde-socialnet, .centerBadge {
+    display: flex;
+    justify-content: center;
+}
+
+.bagde-socialnet .badge {
+    width: 60%;
 }
 
 .socialnet {
     height: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: end;
@@ -167,7 +185,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .social-icons a {
@@ -219,7 +236,6 @@ input::placeholder {
 
 .social-icons li:hover {
     transform: scale(1.2);
-    border: 0.3rem solid red;
 }
 
 
@@ -230,6 +246,10 @@ input::placeholder {
     flex-direction: column;
 
     justify-content: space-between;
+}
+
+.data {
+    width: 52%;
 }
 
 .text-fields {
@@ -244,7 +264,7 @@ input::placeholder {
     background-color: #ffff;
 }
 
-.text-fields p {
+.text-fields p, .text-fields a {
     margin-left: 2rem;
 
     font-family: var(--font-data);
@@ -255,12 +275,18 @@ input::placeholder {
 
 .btn-data {
     align-self: end;
+    border: none;
+    background-color: #ffff;
+}
+
+.btn-data:hover {
+    background-color: #F2F2F2;
 }
 
 /* modal */
 
 .modal-history {
-    display: none;
+    display: block;
 
     position: absolute;
     z-index: 30000;
@@ -272,7 +298,7 @@ input::placeholder {
 }
 
 .modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
@@ -280,9 +306,11 @@ input::placeholder {
     width: 120rem;
     height: 60rem;
 
-    padding:  12rem 9rem;
+    overflow-y: auto;
 
-    background-color: yellowgreen;
+    padding:  8rem 9rem;
+
+    background-color: var(--b);
 
     border-radius: 1rem;
 
@@ -327,7 +355,9 @@ input::placeholder {
 .badge-opacity {
     position: absolute;
 
-    bottom: 4%;
+    width: 45%;
+
+    top: 35%;
     right: 2%;
 
     z-index: 3;

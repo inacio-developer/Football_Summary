@@ -34,13 +34,11 @@ export default class Select {
 
     async generateValues() {
         const list = await new API(this.url).request()
-
-        console.log(list);
         this.values(list);
     }
 
     init(){
-        if(this.select){
+        if(this.select && this.url){
             this.generateValues()
         }
     }
