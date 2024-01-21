@@ -90,12 +90,9 @@ export default class resultData {
         this.insertData(data);
     }
 
-    insert() {
-        this.n
-    }
-
     init(){
-        if(this.name && this.nation && this.stadium && this.website && this.badge)
+        if(this.name && this.nation && this.stadium && this.website && this.badge &&
+            this.icons && this.iconsAnchor && this.modal && this.history)
             this.database()
     }
 }

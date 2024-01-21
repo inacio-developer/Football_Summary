@@ -39,7 +39,6 @@ export default class Select {
 
     init(){
         if(this.select && this.url){
-            console.log(this.select)
             this.generateValues()
         }
     }
