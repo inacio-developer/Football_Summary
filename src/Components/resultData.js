@@ -1,7 +1,7 @@
 import { stringConstruction } from "./teamOptions.js"; 
 import API from "./APIRequest.js";
 
-export default class resultData {
+export default class ResultData {
     constructor(...data){        
         this.name = document.querySelectorAll("." + data[0]);
         this.nation = document.querySelector("." + data[1]);
@@ -41,7 +41,7 @@ export default class resultData {
 
             this.icons.forEach((icon) => icon.style.fill =  team.strKitColour1);
 
-            if(team.strKitColour2 === "#000000") this.modal.style.color = "#FFFFFF";
+            if(team.strKitColour2 === "#000000" || team.strKitColour2 === "#010101") this.modal.style.color = "#FFFFFF";
             
             this.modal.style.backgroundColor = team.strKitColour2 ? team.strKitColour2 : "#FFFFFF";
         }

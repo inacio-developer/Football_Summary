@@ -273,13 +273,13 @@ input::placeholder {
     color: #231F20;
 }
 
-.btn-data {
+.btn-open {
     align-self: end;
     border: none;
     background-color: #ffff;
 }
 
-.btn-data:hover {
+.btn-open:hover {
     background-color: #F2F2F2;
 }
 

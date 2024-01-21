@@ -1,4 +1,4 @@
-export default class btnIndex {
+export default class BtnIndex {
     constructor(btn, field, field1){
         this.btn = document.querySelector(btn);
         this.field = document.querySelector(field);
