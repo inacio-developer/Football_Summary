@@ -149,6 +149,8 @@ input::placeholder {
     align-items: center;
 
     width: 100%;
+
+    filter: blur(2rem);
 }
 
 .bagde-socialnet, .data {
@@ -372,5 +374,56 @@ input::placeholder {
 
     100% {
         opacity: 1
+    }
+}
+
+/* loading */
+.loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    opacity: .98;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+
+    border: 0.1rem solid white;
+
+    background-color: #214001;
+}
+
+.loading-line {
+   width: 0.6rem;
+   height: 0.6em;
+   border-radius: 50%;
+   background-color: white;
+}
+
+.loading-mid {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    padding: 0.6rem;
+    border: 0.6rem dotted white;
+    border-radius: 50%;
+    animation: spin 6s linear infinite;
+}
+
+.center-loading {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
     }
 }
