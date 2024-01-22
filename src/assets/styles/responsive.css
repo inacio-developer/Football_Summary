@@ -1,0 +1,104 @@
+@media screen and (max-width: 940px) {
+    .modal {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    :root {
+        --title-size: 4.9rem;
+    }
+    
+    .league-team {
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .btn-index {
+        align-self: flex-end;
+    }
+
+    .main-result {
+        flex-direction: column;
+  }
+
+  .socialnet {
+    margin-top: 2rem;
+    height: auto;
+    align-items:normal;
+  }
+
+  .bagde-socialnet .badge {
+    width: 55%;
+}
+  .bagde-socialnet, .data {
+    height: 30rem;
+  }
+
+  .socialnet {
+    margin-bottom: 2rem;
+}
+
+}
+
+@media screen and (max-width: 645px) {
+    .bagde-socialnet .badge {
+        width: 73%;
+    }
+
+    .socialnet {
+        margin-bottom: 1.5rem;
+    }
+
+    .modal {
+        padding: 9rem 2rem;
+    }
+} 
+  @media screen and (max-width: 550px) {
+    :root {
+        --title-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .bagde-socialnet .badge {
+        width: 100%;
+    }
+    
+    .text-fields {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    :root {
+        --title-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    :root {
+        --title-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    :root {
+        --title-size: 2.4rem;
+    }
+
+    .league-team {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+ :root {
+        --title-size: 2rem;
+    }
+}
