@@ -22,7 +22,7 @@ export default class ResultData {
     }
 
     colorPalette(team) {
-        if(team.strKitColour1.toUpperCase() === "#FFFFFF" || !team.strKitColour1) {
+        if(!team.strKitColour1 || team.strKitColour1.toUpperCase() === "#FFFFFF" ) {
             if(team.strKitColour2) {
                 const color =  team.strKitColour2;
 
@@ -72,6 +72,7 @@ export default class ResultData {
     insertData(data){
         data.teams.forEach((team) => {
             if(team.strTeam === sessionStorage.getItem("team")) {
+                console.log(team)
                 this.generalData(team);
                 this.teamShield(team);
                 this.colorPalette(team);
