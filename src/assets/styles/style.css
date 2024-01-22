@@ -53,8 +53,12 @@ body {
 }
 
 .title-form {
-    width: 82.09rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
 }
 
 .title {
@@ -68,7 +72,10 @@ body {
 
 .league-team {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+
+    width: 100%;
 }
 
 select {
@@ -288,15 +295,14 @@ input::placeholder {
 /* modal */
 
 .modal-history {
-    display: block;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
     z-index: 30000;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
 }
 
 .modal {
@@ -305,7 +311,7 @@ input::placeholder {
     justify-content:flex-start;
     align-items: center;
     
-    width: 120rem;
+    width: 90%;
     height: 60rem;
 
     overflow-y: auto;
