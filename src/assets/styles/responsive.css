@@ -1,13 +1,15 @@
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 978px) {
+    :root {
+        --title-size: 5.6rem;
+    }
+
     .modal {
         width: 98%;
     }
 }
 
 @media screen and (max-width: 837px) {
-    :root {
-        --title-size: 4.9rem;
-    }
+  
     
     .league-team {
         flex-direction: column;
@@ -46,6 +48,12 @@
 
 }
 
+@media screen and (max-width: 683px) {
+:root {
+    --title-size: 4.6rem;
+}
+}
+
 @media screen and (max-width: 645px) {
     .bagde-socialnet .badge {
         width: 73%;
@@ -61,7 +69,7 @@
 } 
   @media screen and (max-width: 550px) {
     :root {
-        --title-size: 4rem;
+        --title-size: 3.6rem;
     }
 }
 
@@ -75,21 +83,21 @@
     }
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 422px) {
     :root {
-        --title-size: 3.2rem;
+        --title-size: 3.1rem;
     }
 }
 
 @media screen and (max-width: 362px) {
     :root {
-        --title-size: 3rem;
+        --title-size: 2.8rem;
     }
 }
 
 @media screen and (max-width: 330px) {
     :root {
-        --title-size: 2.4rem;
+        --title-size: 2.2rem;
     }
 
     .league-team {
@@ -99,6 +107,6 @@
 
 @media screen and (max-width: 300px) {
  :root {
-        --title-size: 2rem;
+        --title-size: 2.1rem;
     }
 }
